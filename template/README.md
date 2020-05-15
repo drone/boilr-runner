@@ -20,4 +20,4 @@ This software is licensed under the [Blue Oak Model License 1.0.0](https://spdx.
 # Notice
 <!-- do not remove notice -->
 
-This software relies on the [runner-go](https://github.com/drone/runner-go) module authored by [Drone.IO, Inc](https://github.com/drone) under the [Polyform](https://github.com/drone/runner-go/blob/master/LICENSE.md) license. This module can be used in any software for free for any permitted purpose in accordance with the license. This module cannot be used is any software that competes with the licensor.
+This software relies on the [runner-go](https://github.com/drone/runner-go) module authored by [Drone.IO, Inc](https://github.com/drone) under a [Non-compete](https://github.com/drone/runner-go/blob/master/LICENSE.md) license. This module can be used in any software for free for any permitted purpose in accordance with the license. This module cannot be used is any software that competes with the licensor.
