@@ -1,0 +1,13 @@
+kind: {{ Kind }}
+type: {{ Type }}
+name: default
+
+steps:
+- name: build
+  commands:
+  - go build
+
+- name: test
+  commands:
+  - go test
+  depends_on: [ build ]

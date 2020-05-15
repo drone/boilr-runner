@@ -1,0 +1,34 @@
+kind: {{ Kind }}
+type: docker
+name: linux
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: test
+  image: golang:1.12
+  commands:
+  - go test -cover ./...
+  - sh scripts/build.sh
+
+- name: publish
+  image: plugins/docker
+  pull: if-not-exists
+  settings:
+    repo: {{ Image }}
+    auto_tag: true
+    dockerfile: docker/Dockerfile.linux.amd64
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+  when:
+    ref:
+    - refs/heads/master
+    - refs/tags/*
+
+volumes:
+- name: go
+  temp: {}

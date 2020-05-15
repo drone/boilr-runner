@@ -1,0 +1,8 @@
+---
+kind: {{ Kind }}
+type: {{ Type }}
+
+steps:
+ foo: bar
+
+...

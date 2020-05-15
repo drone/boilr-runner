@@ -1,0 +1,4 @@
+drone-runner-{{ Type }}
+drone-runner-{{ Type }}.exe
+release/*
+.env

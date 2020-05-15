@@ -1,0 +1,6 @@
+{
+    "Kind": "pipeline",
+    "Type": "",
+    "Module": "github.com/my-organization/my-runner",
+    "Image": "docker.io/my-organization/my-runner"
+}

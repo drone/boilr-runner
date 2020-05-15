@@ -1,0 +1,18 @@
+kind: {{ Kind }}
+type: {{ Type }}
+name: default
+
+clone:
+  disable: true
+
+steps:
+- name: build
+  image: golang
+  commands:
+  - go build
+
+- name: test
+  image: golang
+  commands:
+  - go test
+  depends_on: [ build ]

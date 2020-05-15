@@ -1,0 +1,15 @@
+---
+kind: {{ Kind }}
+type: {{ Type }}
+name: test
+
+steps:
+- name: build
+  commands:
+  - go build
+
+- name: test
+  commands:
+  - go test
+
+...

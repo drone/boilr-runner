@@ -1,0 +1,9 @@
+---
+kind: {{ Kind }}
+type: {{ Type }}
+name: test
+
+steps:
+- ~
+
+...
